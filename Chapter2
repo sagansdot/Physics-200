@@ -1,0 +1,182 @@
+{
+ "metadata": {
+  "name": "Chapter 2 "
+ }, 
+ "nbformat": 2, 
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "width = 17", 
+      "height = 12.0", 
+      "delimiter = '.'", 
+      "", 
+      "type(width/2)", 
+      "type(width/2.0)", 
+      "type(height/3)", 
+      "type(1 + 2 * 5)", 
+      "type(delimiter * 5)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 1, 
+       "text": [
+        "str"
+       ]
+      }
+     ], 
+     "prompt_number": 1
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "type(width/2.0)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 2, 
+       "text": [
+        "float"
+       ]
+      }
+     ], 
+     "prompt_number": 2
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 2
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "type(height/3)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 3, 
+       "text": [
+        "float"
+       ]
+      }
+     ], 
+     "prompt_number": 3
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "type(1 + 2 * 5)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 4, 
+       "text": [
+        "int"
+       ]
+      }
+     ], 
+     "prompt_number": 4
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "type(delimiter * 5)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 5, 
+       "text": [
+        "str"
+       ]
+      }
+     ], 
+     "prompt_number": 5
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "pi = 3.14159", 
+      "", 
+      "4*pi*(5**3)/3"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 13, 
+       "text": [
+        "523.5983333333332"
+       ]
+      }
+     ], 
+     "prompt_number": 13
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "60*(.4*24.95)+3+.75*(60-1)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 14, 
+       "text": [
+        "646.0500000000001"
+       ]
+      }
+     ], 
+     "prompt_number": 14
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "(8.25*1)+(7.2*3)+(8.25*1)"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "pyout", 
+       "prompt_number": 17, 
+       "text": [
+        "38.1"
+       ]
+      }
+     ], 
+     "prompt_number": 17
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": "&nbsp;"
+    }
+   ]
+  }
+ ]
+}

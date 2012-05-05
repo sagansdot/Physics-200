@@ -1,0 +1,270 @@
+{
+ "metadata": {
+  "name": "Chapter 3 "
+ }, 
+ "nbformat": 2, 
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def repeat_lyrics():", 
+      "    print_lyrics()", 
+      "    print_lyrics()", 
+      "    repeat_lyrics()", 
+      "", 
+      "def print_lyrics():", 
+      "    print \"I'm a lumberjack, and I'm okay.\"", 
+      "    print \"I sleep all night and I work all day.\""
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 1
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "print_lyrics()"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "stream", 
+       "stream": "stdout", 
+       "text": [
+        "I&apos;m a lumberjack, and I&apos;m okay.", 
+        "I sleep all night and I work all day."
+       ]
+      }
+     ], 
+     "prompt_number": 2
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def right_justify(s):", 
+      "    x = len(s)", 
+      "    space = 70 - x", 
+      "    print space*' '+s", 
+      "    "
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 3
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "right_justify('allen')"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "output_type": "stream", 
+       "stream": "stdout", 
+       "text": [
+        "                                                                 allen"
+       ]
+      }
+     ], 
+     "prompt_number": 4
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def do_twice(f):", 
+      "    f()", 
+      "    f()"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 5
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def print_twice(bruce):", 
+      "    print bruce", 
+      "    print bruce "
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 6
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "do_twice(print_twice, 'spam')"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "ename": "TypeError", 
+       "evalue": "do_twice() takes exactly 1 argument (2 given)", 
+       "output_type": "pyerr", 
+       "traceback": [
+        "<span class=\"ansired\">---------------------------------------------------------------------------</span>\n<span class=\"ansired\">TypeError</span>                                 Traceback (most recent call last)", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-7-2d29c3dc93e4&gt;</span> in <span class=\"ansicyan\">&lt;module&gt;</span><span class=\"ansiblue\">()</span>\n<span class=\"ansigreen\">----&gt; 1</span><span class=\"ansiyellow\"> </span>do_twice<span class=\"ansiyellow\">(</span>print_twice<span class=\"ansiyellow\">,</span> <span class=\"ansiblue\">&apos;spam&apos;</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansired\">TypeError</span>: do_twice() takes exactly 1 argument (2 given)"
+       ]
+      }
+     ], 
+     "prompt_number": 7
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def do_four(f, bruce):", 
+      "    do_twice(f, bruce)", 
+      "    do_twice(f, bruce)"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 8
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "do_four(print_twice, 'allen')"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "ename": "TypeError", 
+       "evalue": "do_twice() takes exactly 1 argument (2 given)", 
+       "output_type": "pyerr", 
+       "traceback": [
+        "<span class=\"ansired\">---------------------------------------------------------------------------</span>\n<span class=\"ansired\">TypeError</span>                                 Traceback (most recent call last)", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-9-108e69fdbcd8&gt;</span> in <span class=\"ansicyan\">&lt;module&gt;</span><span class=\"ansiblue\">()</span>\n<span class=\"ansigreen\">----&gt; 1</span><span class=\"ansiyellow\"> </span>do_four<span class=\"ansiyellow\">(</span>print_twice<span class=\"ansiyellow\">,</span> <span class=\"ansiblue\">&apos;allen&apos;</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-8-fd50d98218ec&gt;</span> in <span class=\"ansicyan\">do_four</span><span class=\"ansiblue\">(f, bruce)</span>\n<span class=\"ansigreen\">      1</span> <span class=\"ansigreen\">def</span> do_four<span class=\"ansiyellow\">(</span>f<span class=\"ansiyellow\">,</span> bruce<span class=\"ansiyellow\">)</span><span class=\"ansiyellow\">:</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">----&gt; 2</span><span class=\"ansiyellow\">     </span>do_twice<span class=\"ansiyellow\">(</span>f<span class=\"ansiyellow\">,</span> bruce<span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">      3</span>     do_twice<span class=\"ansiyellow\">(</span>f<span class=\"ansiyellow\">,</span> bruce<span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansired\">TypeError</span>: do_twice() takes exactly 1 argument (2 given)"
+       ]
+      }
+     ], 
+     "prompt_number": 9
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "def print_row():", 
+      "    print '+ - - - -'"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 13
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def print_column():", 
+      "    print '|        '"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": "&nbsp;"
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def print_rows():", 
+      "    do_twice(print_row)", 
+      "    print '+'"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 11
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def print_columns():", 
+      "    do_twice(print_column)", 
+      "    print '|'"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 19
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def print_bottom():", 
+      "    print_rows()", 
+      "    do_four(print_column)"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 21
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [
+      "def print_grid():", 
+      "    do_twice(print_bottom)", 
+      "    print_columns()"
+     ], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": 22
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": false, 
+     "input": [
+      "print_grid()"
+     ], 
+     "language": "python", 
+     "outputs": [
+      {
+       "ename": "NameError", 
+       "evalue": "global name 'print_column' is not defined", 
+       "output_type": "pyerr", 
+       "traceback": [
+        "<span class=\"ansired\">---------------------------------------------------------------------------</span>\n<span class=\"ansired\">NameError</span>                                 Traceback (most recent call last)", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-23-8e7aa21effc6&gt;</span> in <span class=\"ansicyan\">&lt;module&gt;</span><span class=\"ansiblue\">()</span>\n<span class=\"ansigreen\">----&gt; 1</span><span class=\"ansiyellow\"> </span>print_grid<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-22-665fd1d011d1&gt;</span> in <span class=\"ansicyan\">print_grid</span><span class=\"ansiblue\">()</span>\n<span class=\"ansigreen\">      1</span> <span class=\"ansigreen\">def</span> print_grid<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\">:</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">----&gt; 2</span><span class=\"ansiyellow\">     </span>do_twice<span class=\"ansiyellow\">(</span>print_bottom<span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">      3</span>     print_columns<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-5-d0a623ebe605&gt;</span> in <span class=\"ansicyan\">do_twice</span><span class=\"ansiblue\">(f)</span>\n<span class=\"ansigreen\">      1</span> <span class=\"ansigreen\">def</span> do_twice<span class=\"ansiyellow\">(</span>f<span class=\"ansiyellow\">)</span><span class=\"ansiyellow\">:</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">----&gt; 2</span><span class=\"ansiyellow\">     </span>f<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">      3</span>     f<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansigreen\">/home/bryan/ipython/&lt;ipython-input-21-2c106f7af9dd&gt;</span> in <span class=\"ansicyan\">print_bottom</span><span class=\"ansiblue\">()</span>\n<span class=\"ansigreen\">      1</span> <span class=\"ansigreen\">def</span> print_bottom<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\">:</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">      2</span>     print_rows<span class=\"ansiyellow\">(</span><span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n<span class=\"ansigreen\">----&gt; 3</span><span class=\"ansiyellow\">     </span>do_four<span class=\"ansiyellow\">(</span>print_column<span class=\"ansiyellow\">)</span><span class=\"ansiyellow\"></span>\n", 
+        "<span class=\"ansired\">NameError</span>: global name &apos;print_column&apos; is not defined"
+       ]
+      }, 
+      {
+       "output_type": "stream", 
+       "stream": "stdout", 
+       "text": [
+        "+ - - - -", 
+        "+ - - - -", 
+        "+"
+       ]
+      }
+     ], 
+     "prompt_number": 23
+    }, 
+    {
+     "cell_type": "code", 
+     "collapsed": true, 
+     "input": [], 
+     "language": "python", 
+     "outputs": [], 
+     "prompt_number": "&nbsp;"
+    }
+   ]
+  }
+ ]
+}
